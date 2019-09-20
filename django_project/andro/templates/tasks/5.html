@@ -1,0 +1,135 @@
+{% extends "header.html" %}
+{% load staticfiles%}
+{% block content %}
+
+  <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+       <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+  <div class="row">
+<div class="first-task">
+</div>
+  </div>
+<div class="col-md-10 col-centered">
+    <!--Section description-->
+    <div class="col-md-10 col-centered background1">
+        <h2 class="text-center py-5  upperKa">როგორ მოვატყუოთ ხალხი ინტერნეტში </h2>
+
+        <section id="faq" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center "><h1 class="upperKa">ვინ არიან ტროლები?</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">ტროლები არიან ბოტები, ადამიანები ან ორგანიზაციები, რომლებიც საკუთარი ეგოს დასაკმაყოფილებლად ან კომერციული/პოლიტიკური მიზნების
+                        გამო ატყუებენ და მანიპულირებენ ინტერნეტში მყოფი ადამიანებით.</p>
+                <h3 class="upperKa">როგორ დავიცვათ თავი ტროლების გავლენისგან?</h3>
+              <h5> მეტი ინფორმაციისთვის დააჭირეთ წინადადებებს</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row pb-5">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="lni-pencil"></i>  <b>მოერიდეთ </b> პირადი ინფორმაციის სოციალურ ქსელში უკონტროლო გავრცელებას
+                  </div>
+                </div>
+                <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                  <div class="card-body">
+                    ჯგუფებში და გვერდებზე ხშირად იდება სურათები, რომლებიც სურათის ქვეშ გარკვეული პირადი ინფორმაციის: საცხოვრებელი მისამართის,
+                      იმეილის, დაბადების თარიღის და სხვა პირადი ინფორმაციის დაწერას გთხოვენ.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+                      <i class="lni-pencil"></i>   <b> მოერიდეთ </b> დაუზუსტებელი ინფორმაციის გაზიარებას
+                    </div>
+                </div>
+                <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                  <div class="card-body">
+                   "ნასას მეცნიერებმა ხახულის ხატი შეისწავლეს", "15 რამ რასაც ექიმები გიმალავენ", "პრეზიდენტის ცოლის ძმის შოკისმომგვრელი კადრები", მსგავსი სტატიები მხოლოდ ერთი მიზნით იწერება,
+                      რომ დრო წაგართვან და საიტის პატრონს შემოსავალი მოუტანონ.
+                      გახსოვდეთ, ინტერნეტში ნებისმიერი სახის ტექსტის დაწერა შეიძლება. სანამ ტექსტს გააზიარებთ ან მოიწონებთ, შეამოწმეთ მისი სიმართლე!!!
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+                    <i class="lni-pencil"></i>  <b> უფრთხილდით </b> უაზრო, უშინაარსო გვერდებს
+                  </div>
+                </div>
+                <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                    დღეს-დღეობით თქვენი მოწონებების ყიდვა-გაყიდვა ჩვეულებრივი ბიზნესია.
+                    ცნობილია, რომ ყველაზე მეტ მოწონებას შიშველი ფოტოები, ფსევდორელიგიური სურათები და სურათებზე შავ-თეთრად დაწერილი წინადადებები ქმნიან,
+                      ასე რომ, ან მთლიანად ერიდეთ მსგავსი შინაარსის მატარებელ გვერდებს, ან დარწმუნდით, რომ მსგავსი გვერდების მიზანი მართლაც ისაა, რასაც ამტკიცებენ, და თქვენი ნდობის სხვისთვის მიყიდვის სურვილი არ აქვთ.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingTwo2">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo2" aria-expanded="false" aria-controls="questionTwo">
+                      <i class="lni-pencil"></i> გაცხრილეთ თქვენი ჯგუფები
+                    </div>
+                </div>
+                <div id="questionTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                  <div class="card-body">
+        რამდენჯერ დაუმატებიხართ გაურკვეველ პირებს თქვენი მეგობრების გატეხილი ფეისბუქებით სხვადასხვა ჯგუფებში? "საგიჟეთი", "fun" და მსგავსი
+                      ნახევარ მილიონიანი ჯგუფების ერთადერთი მიზანი თქვენი მანიპულაციაა.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
+                    <i class="lni-pencil"></i>ერიდეთ ყვითელ პრესას
+                  </div>
+                </div>
+                <div id="questionFive" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                    ყვითელი პრესის საიტები ავტომატურად ასოცირდებიან საიტების ადმინისტრატორებთან, რომლებიც ფულის გასაკეთებლად ყველაფერს იკადრებენ
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
+                    <i class="lni-pencil"></i> გახსოვდეთ, კომენტარის დაწერა საქმის ცოდნას არ ნიშნავს.
+                  </div>
+                </div>
+                <div id="questionSix" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                        კომენტარის დაწერა ნებისმიერს შეუძლია, თუმცა ეს იმას არ ნიშნავს,
+                        რომ ეს ადამიანები საქმეში ჩახედულები არიან. დაფიქრდით ვინ უფრო გამოცდილია მოცემულ საკითხში,
+                        თემის ავტორი თუ სოციალური ქსელის გაურკვეველი მომხმარებელი.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <h3></h3>
+    </div></div>
+    <div>
+
+    <h3 class="text-center text-warning pb-5">  გადახედეთ ჩვენს სექციებს "ვაი პოსტები" და "გამოკითხვები", რათა შემდეგში
+    სოციალურ ქსელში მარტივად შეძლოთ საფრთხეების ამოცნობა</h3>
+
+    </div>
+<script type="text/javascript">
+	$("#first-task").click(function() {
+
+	})
+</script>
+</div>{% endblock %}

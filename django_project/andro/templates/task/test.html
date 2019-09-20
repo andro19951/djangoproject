@@ -1,0 +1,32 @@
+{% extends "header.html" %}
+{% load staticfiles%}
+{% block content %}
+                <div class="col-centered col-md-8 card">
+                <img class="col-md-12" src="{{ the_test.imaged }}">
+                <h3>{{ the_test.Questions }}</h3>
+                <div class="row">
+                <button class="answer-show btn green col-md-6" onclick="{% if the_test.rightone == "A1" %} swal('Success!','You earned 50xp','success') {% else %} swal('Try again','{{ the_test.Answers }}','error') {% endif %}">{{ the_test.Answer1 }}</button>
+                <button class="answer-show  btn float-right green col-md-6" onclick="{% if the_test.rightone == "A2" %} swal('Success!','You earned 50xp','success') {% else %} swal('Try again','{{ the_test.Answers }}','error') {% endif %}">{{ the_test.Answer2 }}</button>
+                </div>
+                    <div class="row">
+                    <button class="answer-show btn green col-md-6 " onclick="{% if the_test.rightone == "A3" %} swal('Success!','You earned 50xp','success') {% else %} swal('Try again','{{ the_test.Answers }}','error') {% endif %}">{{ the_test.Answer3 }}</button>
+                <button class="answer-show btn green col-md-6" onclick="{% if the_test.rightone == "A4" %} swal('Success!','You earned 50xp','success') {% else %} swal('Answer','{{ the_test.Answers }}','error') {% endif %}" >{{ the_test.Answer4 }}</button>
+                </div>
+                {% if next_test %}
+                    <a href="{% url 'test_view' next_test.id %} " class="btn cyan" > next</a>
+                    {% else %}
+                    <a href="{% url 'main_view' %} " class="btn cyan" > finish the task</a>
+
+                {% endif %}
+            </div>
+
+
+
+<script>
+    $("#next").click(function(){
+    });
+</script>
+<script type="text/babel">
+
+</script>
+{% endblock %}

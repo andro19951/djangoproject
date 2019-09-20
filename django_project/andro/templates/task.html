@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="UTF-8">
+      {% load staticfiles %}
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+       <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+       <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+        <link rel="stylesheet" href={% static 'assets/css/style.css' %}>
+        <link rel="stylesheet" href={% static 'assets/css/bootstrap.css' %}>
+        <link rel="stylesheet" href={% static 'assets/css/mdb.css' %}>
+       <script src={% static 'assets/js/mdb.js' %}></script>
+       <script src={% static 'assets/js/bootstrap.js' %}></script>
+       <script src={% static 'assets/js/main.js' %}></script>
+
+  </head>
+  <body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">ვახ.მე</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/blog/">blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/survey/">survey</a>
+            </li>
+
+
+        </ul>
+        <!-- Links -->
+       <div class="float-left">
+               <ul class="navbar-nav mr-auto">
+
+           {% if user.is_authenticated %}
+                <li class="nav-item">
+                <a class="nav-link" href="/profile/">{{ user.get_username }}</a>
+            </li>
+               <li class="nav-item">
+                <a class="nav-link" href="/logout/">logout</a>
+            </li>
+       {% else %}
+           <li class="nav-item">
+                <a class="nav-link" href="/register/">register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/login/">login</a>
+            </li>
+                      {% endif %}
+               </ul>
+
+       </div>
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+    {% for texts in all_text %}
+
+<div class="card col-md-6 col-centered">
+   <div class="card-header"> {{ texts.text }}</div>
+</div>
+    {% endfor %}
+
+      <div id="root"></div>
+      <script type="text/babel">
+
+      </script>
+  
+  </body>
+</html>
+

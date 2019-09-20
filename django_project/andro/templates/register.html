@@ -1,0 +1,78 @@
+{% extends "header.html" %}
+{% load staticfiles%}
+{% block content %}
+
+
+
+    <div class="container-fluid">
+            <div class="col-md-8 card col-centered mt-5 mb-5  pb-5 animated bounceIn">
+    <div class="card-body">
+        <!-- Material form register -->
+            <h1 class="text-center">{{ message }}</h1>
+        <form method="post" action="#">
+                    {% csrf_token %}
+
+            <h1 class="text-center mb-4"><i class="fa fa-user-plus"></i> Sign Up</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Material input text -->
+                    <div class="md-form">
+                        <i class="fa fa-user prefix "></i>
+                        <input type="text" autocomplete="off" name="usernamed" id="materialFormRegisterNameEx" class="form-control">
+                    <small id="materialFormRegisterNameEx" class="form-text text-muted">Choose username</small></div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Material input email -->
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix "></i>
+                        <input type="email" name="email" id="materialFormRegisterEmailEx" class="form-control">
+                        <small id="materialFormRegisterEmailEx" class="form-text text-muted">Put valid email</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <i class="fa fa-user-circle prefix "></i>
+                        <input type="text" autocomplete="off" name="first_name" id="materialFormRegisterfirstname" class="form-control">
+                        <small id="materialFormRegisterfirstname" class="form-text text-muted">Input your firstname</small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <i class="fa fa-user-circle-o prefix "></i>
+                        <input type="text" autocomplete="off" name="last_name" id="materialFormRegisterfirstnae" class="form-control">
+                        <small id="materialFormRegisterfirstnae" class="form-text text-muted">Input your lastname</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix "></i>
+                        <input type="password" name="password" id="materialFormRegisterPasswordEx" class="form-control">
+                        <small id="materialFormRegisterPasswordEx" class="form-text text-muted">Password should have at least 8 letters</small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix "></i>
+                        <input type="password" name="password2" id="materialFormRegisterConfirmEx" class="form-control">
+                        <small id="materialFormRegisterConfirmEx" class="form-text text-muted">Confirm Your password</small>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-lg btn-primary form-control" name="submit" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</div>
+
+      <div id="root"></div>
+      <script type="text/babel">
+
+      </script>
+{% endblock %}

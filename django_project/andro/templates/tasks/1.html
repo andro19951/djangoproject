@@ -1,0 +1,211 @@
+{% extends "header.html" %}
+{% load staticfiles%}
+{% block content %}
+
+  <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+       <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+  <div class="row">
+<div class="first-task">
+</div>
+<div class="col-md-10 col-centered">
+    <!--Section description-->
+    <div class="col-md-10 col-centered background1">
+        <h2 class="text-center py-5  upperKa">ავტორიზაცია და პაროლები</h2>
+
+        <section id="faq" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center "><h1 class="upperKa">როგორ დავიცვათ საკუთარი ინფორმაცია?</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">რაც არ უნდა დაცული იყოს ვებსაიტი, თუკი თქვენი პაროლი სუსტი ან უკვე ცნობილია ბოროტმოქმედისთვის, ჩვენი ტროლიც ვერ დაგიცავთ. თქვენივე უსაფრთხოებისთვის გაითვალისწინეთ შემდეგი რჩევები:</p>
+              <h5> მეტი ინფორმაციისთვის დააჭირეთ წინადადებებს</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="lni-pencil"></i>  <b>არასოდეს </b> გამოიყენოთ მხოლოდ ერთი პაროლი ყველა ვებსაიტსა და აპლიკაციაში
+                  </div>
+                </div>
+                <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                  <div class="card-body">
+                  ეს ყველაზე დიდი შეცდომაა, რისი დაშვებაც კი შეგიძლიათ. თუკი ვინმე ერთ რომელიმე სუსტ ვებგვერდს ან აპლიკაციას გატეხავს, თქვენი ყველა პროფილი მისი კონტროლის ქვეშ მოექცევა
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+                      <i class="lni-pencil"></i>   <b> არ </b> გამოიყენოთ მხოლოდ ერთი სიტყვა პაროლად
+                    </div>
+                </div>
+                <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                  <div class="card-body">
+                   ერთსიტყვიანი პაროლები ბრუტფორსის შეტევებისთვის იდეალური მასალაა
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+                    <i class="lni-pencil"></i>  <b> არ </b> გამოიყენოთ სახელი და დაბადების თარიღი პაროლის შესაქმნელად
+                  </div>
+                </div>
+                <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                    ბოროტმოქმედი პირველ რიგში სწორედ თქვენი სახელისა და დაბადების თარიღისგან შემდგარი კომბინაციებით შეეცდება სისტემაში შესვლას
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingTwo2">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo2" aria-expanded="false" aria-controls="questionTwo">
+                      <i class="lni-pencil"></i> ყველაზე კარგი ვარიანტი რამდენიმე სიტყვიანი პაროლია
+                    </div>
+                </div>
+                <div id="questionTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                  <div class="card-body">
+                  რამდენიმე სიტყვიანი პაროლი-ფრაზა მარტივად დასამახსოვრებელი და რთულად გასატეხია "MeDaGelatyeshidavrbivart!" უფრო დაცულია, ვიდრე "P@$sW0rb1234"
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionFive" aria-expanded="false" aria-controls="questionFive">
+                    <i class="lni-pencil"></i>ყოველთვის შეამოწმე ვებსაიტის მისამართი
+                  </div>
+                </div>
+                <div id="questionFive" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                        ყოველთვის შეამოწმე ვებსაიტის მისამართი!!! ძალიან ბევრი ფეისბუქისა და გუგლის მსგავსი ვებგვერდი არსებობს, რომლების მიზანიც თქვენი ინფორმაციის მოპარვაა
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionSix" aria-expanded="false" aria-controls="questionSix">
+                    <i class="lni-pencil"></i> არ ჩაწეროთ პაროლები ყველგან, სადაც ამას მოგთხოვენ
+                  </div>
+                </div>
+                <div id="questionSix" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                  იცით თუ არა, რა ვებსაიტზე რეგისტრირდებით? დარწმუნებულები ხართ, რომ თქვენს ინფორმაციას ვებგვერდის პატრონი არ მოიპარავს?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br/>
+<br/>
+
+        <h3 class="text-center py-5  upperKa">troll goes Phishing</h3>
+	    <p class=" pb-5 text-center ">თვით ტროლებიც კი იყენებენ სოციალურ მედიას. მაგალითად, გუშინ, ჩვენმა საყვარელმა ტროლმა გადაწყვიტა ფეისბუქის სტატუსების დათვალიერება. თუმცა, როგორც კი ფეისბუქის ამ გვერდზე აღმოჩნდა, მაშინვე მიხვდა, რომ რაღაც ისე არ იყო. შეგიძლიათ თუ არა იპოვოთ, რა შენიშნა ბოტტროლმა?</h5>
+    </div>
+          <h5 class="text-center">პასუხის სანახავად დააჭირეთ ღილაკს</h5>
+
+<div class="second-task">
+      <div class="col-md-6 col-centered">
+      </div>
+      <!-- Main Carousel Section Start -->
+      <div id="main-slide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+          <li data-target="#main-slide" data-slide-to="1"></li>
+          <li data-target="#main-slide" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src={% static "assets/img/fakebook.png"  %} alt="First slide">
+            <div class="carousel-caption d-md-block">
+              <h1 class="wow fadeInDown heading" data-wrap="false" data-ride="false" data-wow-delay="36s"></h1>
+              <button class="answer-show btn green" onclick="swal('პასუხი','შეხედეთ ვებსაიტის მისამართს. მიუხედავად იმისა, რომ ვებგვერდი ანალოგიურია,  მისამართი არა facebook.com, არამედ მატყუარა ვებგვერდი fakebook.com-ია','info')">პასუხის ჩვენება</button>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#main-slide" role="button" data-slide="next">
+          <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-right"></i></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <!-- Main Carousel Section End -->
+      <div class="col-md-10 col-centered">
+    <!--Section description-->
+    <div class="col-md-7 col-centered background1">
+            <h3 class="text-center py-5  upperKa"> თანახმა ვარ</h3>
+
+      <p class=" pb-5 text-center ">ჟორას პაროლების დამახსოვრება უჭირს. ეზარება ყველა ვებსაიტზე ხელახლა შესვლა და სადაც კი დაინახავს, ყველგან სოციალური ქსელების საშუალებით შედის. ჩვენს პატარა ვებსაიტზეც ფეისბუქით დარეგისტრირდა. აბა თუ მიხვდებით, რა შეცდომა დაუშვა ჟორამ?</p>
+
+            <h5>პასუხის სანახავად დააჭირეთ ღილაკს</h5>
+
+    </div>
+      <div class="second-task">
+      <div class="col-md-6 col-centered">
+      </div>
+      <!-- Main Carousel Section Start -->
+      <div id="main-slide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+          <li data-target="#main-slide" data-slide-to="1"></li>
+          <li data-target="#main-slide" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src={% static "assets/img/screenshot.png" %} alt="First slide">
+            <div class="carousel-caption d-md-block">
+              <h1 class="wow fadeInDown heading" data-wrap="false" data-ride="false" data-wow-delay="36s"></h1>
+              <button class="answer-show btn green" onclick="swal('პასუხი','ჟორამ არ შეხედა, თუ რა ინფორმაციას ვითხოვდით მისგან. შესაბამისად, ჩვენი ტროლი ჟორას პირად ინფორმაციას შეინახავს და ვიღაც ცუდ ტიპს მიყიდის','info')">პასუხის ჩვენება</button>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-next" href="#main-slide" role="button" data-slide="next">
+          <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-right"></i></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Main Carousel Section End -->
+    </header>
+    <!-- Header Area wrapper End -->
+    <!--Section description-->
+        <div class=" row col-md-12 background1">
+    <div class="col-md-7 ">
+  <h3 class="text-center py-5  upperKa ">მეგობარი ტროლის პატარა რჩევა</h3>
+	    <p class=" pb-5 text-center ">გამოკითხვებს და სხვადასხვა უაზრო ვებსაიტებს თქვენი ინფორმაცია არ სჭირდებათ. სამაგიეროდ, არიან კომპანიები, რომლებიც სიამოვნებით იყიდიან თქვენს ინფორმაციას. იმის გაგებით, თუ სად ცხოვრობთ, რა სურათებს დებთ, რომელ ფეისბუქის ჯგუფებს და გვერდებს იწონებთ, ცუდი ადამიანები თქვენს მანიპულირებას და მოტყუებას შეეცდებიან. ამიტომ ყოველთვის წაიკითხეთ, რა ინფორმაციას აძლევთ სხვა ვებსაიტებსა და გამოკითხვებს!  </p>
+    </div>
+        <div class= col-md-5>
+        <img class="col-md-10" src={%  static "assets/img/troll.png"  %}></div>
+</div>
+    <!-- Ask Question Section Start -->
+
+    <!-- Go to Top Link -->
+          <h3 class="text-center"></h3>
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+	$("#first-task").click(function() {
+
+	})
+</script>{% endblock %}

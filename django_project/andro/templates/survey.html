@@ -1,0 +1,48 @@
+{% extends "header.html" %}
+{% load staticfiles%}
+{% block content %}
+<div class="col-md-8 card col-centered mt-5 mb-5  pb-5 animated bounceIn">
+    <div class="card-body">
+        <!-- Material form register -->
+        <form method="post" action="#">
+        {% csrf_token %}
+            <h1 class="text-center mb-4"><i class="fa fa-user-plus"></i> გამოკითხვა</h1>
+{% for questions in all_questions %}
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Material input text -->
+                    <div class="md-form">
+                        <p>{{questions.Question}}</p>
+                        <i class="fa fa-user prefix "></i>
+                        <input type="text" autocomplete="off" name={{ questions.id }} id="answer{{ questions.id }}" class="form-control">
+                        <div class="cyan-text" id="answers{{ questions.id }}"></div>
+                </div>
+                </div>
+            </div>
+
+            {% endfor %}
+        <div class="col-md-12">
+            <div class="text-center mt-4">
+                <button class="btn btn-lg btn-primary form-control" id="send" type="submit">გაგზავნა</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+<script type="text/babel">
+        var url = window.location.href;     // Returns full URL
+        if(url[url.length-1]=="#") {
+            console.log("lol")
+            {% for questions in all_questions %}
+                var element = <p class="light-blue-text">{{ questions.answer }}</p>
+                ReactDOM.render(
+                    element,
+                    document.getElementById("answers{{ questions.id }}")
+                )
+            {% endfor %}
+        }
+        else{
+            console.log(url[url.length-1])
+        }
+</script>
+{% endblock %}

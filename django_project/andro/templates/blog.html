@@ -1,0 +1,42 @@
+{% extends "header.html" %}
+{% load staticfiles%}
+{% block content %}
+    {% for blog in all_blogs %}
+        <div class="card col-centered col-md-8  mt-5">
+
+            <!--Card image-->
+            <img class="img-fluid" src= "../{{  blog.blog_logo.url }}" alt="Card image cap">
+
+            <!--Card content-->
+            <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">{{ blog.blog_title }}</h4>
+                <!--Text-->
+                <div id="description{{ blog.id }}"></div>
+
+                <button id="readmore{{ blog.id }}" class="btn btn-primary">წაკითხვა</button>
+            </div>
+
+        </div>
+    {% endfor %}
+    <div id="root"></div>
+    <script type="text/babel">
+
+        {% for blog in all_blogs %}
+
+            var element= <p class="card-text">{{ blog.blog_description }}</p>
+            $("#readmore{{ blog.id }}").click(function(){
+                console.log("clicked")
+                element=<p class="card-text">{{ blog.blog_text|linebreaks }}</p>
+                ReactDOM.render(
+                    element,
+                    document.getElementById("description{{ blog.id }}")
+                )
+            })
+            ReactDOM.render(
+                element,
+                document.getElementById("description{{ blog.id }}")
+            )
+        {% endfor %}
+    </script>
+{% endblock %}

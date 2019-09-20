@@ -1,0 +1,24 @@
+{% extends "header.html" %}
+{% load staticfiles%}
+{% block content %}
+    <h1 class="text-center"> დატროლე მეგობრები ჩვენთან ერთად :) </h1>
+    {% for quiz in all_quiz_text %}
+        <div class="card col-centered col-md-8  mt-5">
+
+            <!--Card image-->
+            <img class="img-fluid" src= "{{ quiz.img }}" alt="Card image cap">
+
+            <!--Card content-->
+            <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">{{ quiz.catchphrase}}</h4>
+                <!--Text-->
+
+                <a id="readmore{{ quiz.id }}" href="{%  url 'quiz_ide' quiz.id %} " class="btn btn-primary">დაწყება</a>
+            </div>
+
+        </div>
+    {% endfor %}
+    <div id="root"></div>
+
+{% endblock %}

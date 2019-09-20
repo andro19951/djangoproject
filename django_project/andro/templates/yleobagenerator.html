@@ -1,0 +1,52 @@
+{% extends "header.html" %}
+{% load staticfiles%}
+{% block content %}
+
+
+
+    <div class="container-fluid">
+            <div class="col-md-8 card col-centered mt-5 mb-5  pb-5 animated bounceIn">
+    <div class="card-body">
+        <!-- Material form register -->
+            <h1 class="text-center">{{ message }}</h1>
+        <form method="post" action="#">
+                    {% csrf_token %}
+
+            <h1 class="text-center mb-4"><i class="fa fa-user-plus"></i> შექმენი პოსტი</h1>
+                <div class="col-md-12">
+                    <div class="md-form">
+                        <i class="fa fa-user-circle prefix "></i>
+                        <input type="text" autocomplete="off" name="text" id="materialFormRegisterfirstname" class="form-control">
+                        <small id="materialFormRegisterfirstname" class="form-text text-muted">რა იქნება პოსტის სათაური?</small>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="md-form">
+                        <i class="fa fa-user-circle-o prefix "></i>
+                        <input type="text" autocomplete="off" name="title" id="materialFormRegisterfirstnae" class="form-control">
+                        <small id="materialFormRegisterfirstnae" class="form-text text-muted">რაზე იქნება პოსტი?</small>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix "></i>
+                        <input type="text" name="url" id="materialFormRegisterPasswordEx" class="form-control">
+                        <small id="materialFormRegisterPasswordEx" class="form-text text-muted"> და ბოლოს, სურათის მისამართი</small>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-lg btn-primary form-control" name="submit" type="submit">შექმენი პოსტი</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</div>
+
+      <div id="root"></div>
+      <script type="text/babel">
+
+      </script>
+{% endblock %}

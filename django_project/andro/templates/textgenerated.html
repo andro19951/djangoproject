@@ -1,0 +1,23 @@
+{% extends "header.html" %}
+{% load staticfiles%}
+{% block content %}
+    {% for task in all_tasks %}
+        <div class="card col-centered col-md-6  mt-5">
+
+            <!--Card image-->
+            <img class="img-fluid" src= "{{  task.url }}" alt="Card image cap">
+
+            <!--Card content-->
+            <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">{{ task.name }}</h4>
+                <!--Text-->
+                <div id="description">{{ task.description }}</div>
+
+                <a href="{% url 'yleobageneratedtext' task.id %}?id=12" class="btn btn-primary">გადადი</a>
+            </div>
+
+        </div>
+    {% endfor %}
+
+{% endblock %}

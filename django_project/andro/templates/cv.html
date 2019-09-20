@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bottroll</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <link rel="stylesheet" href={% static 'assets/css/style.css' %}>
+    <link rel="stylesheet" href={% static 'assets/css/bootstrap.css' %}>
+    <link rel="stylesheet" href={% static 'assets/css/mdb.css' %}>
+    <script src={% static 'assets/js/mdb.js' %}></script>
+    <script src={% static 'assets/js/bootstrap.js' %}></script>
+    <script src={% static 'assets/js/main.js' %}></script>
+
+<body>
+<br/>
+<div class="card col-md-8  col-centered">
+    <h2 class="text-center amber-text upperKa pb-5 ">Hey there</h2>
+    <div class="row pb-5">
+        <div class="col-md-4">
+            <img class="col-md-12 profile_picture "
+                 src="https://eppcdigital.com/wp-content/uploads/2018/10/IMGP0987-e1544180517482.jpg">
+        </div>
+        <div class="col-md-6 "><h3 class="text-center text-info pb-2">My name is Andro</h3>
+            <h5 class="upperKa pb-1 text-center"> I'm 22 years old cyber security engineering student with ongoing one
+                year and 9 month experience as an account manager in digital marketing company Eppc and 3 month experience as an external contractor in Java project in <a href="https://www.naec.ge">NAEC</a>   </h5>
+            <h4 class="text-center">You can check out <a class=" fa fa-linkedin" target="_blank"
+                                                         href="https://www.linkedin.com/in/gvivradze-andro/"></a>, or
+                <a href="https://www.facebook.com/andro.gvivradze" target="_blank" class="fa fa-facebook"></a>, or
+                <a href="https://github.com/andro19951" target="_blank" class="fa fa-github"></a></h4>
+            <h4 class="upperKa text-center"> my most recent projects include <a href="http://bottroll.com/" target="_blank" >bottroll </a></h4>
+
+            <h3 class="text-center text-truncate text-dark"> But before that,</h3>
+        </div>
+
+    </div>
+    <div class="col-md-12 pb-5"><h4 class="text-center upperKa"> Here's small recap of my life</h4></div>
+
+
+    <section id="faq" class="section-padding pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                <div class="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionOne"
+                                 aria-expanded="true" aria-controls="collapseOne">
+                                <i class="lni-pencil"></i> years 2015-2016
+                            </div>
+                        </div>
+                        <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                            <div class="card-body">
+                                <ul>
+                                    <li>In 2015, Finished physics-mathematics public school in Tbilisi, Georgia.</li>
+                                    <li>Same year, got full scholarship in San Diego State University's newly opened
+                                        campus in Tbilisi, major - computer engineering
+                                    </li>
+                                    <li> Got scholarship for exellence, managed to win two hackathons, one with
+                                        underwater drone, another with outdoor parking system.
+                                    </li>
+                                    <li> same year, Did 3 month Java project with National assessment and examination
+                                        center.
+                                    </li>
+                                    <li> Same year, learnt basics of web development independently.</li>
+                                    <li>At the same time started learning python on edx. Certificates can be found on my
+                                        linkedin profile
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionTwo"
+                                 aria-expanded="false" aria-controls="questionTwo">
+                                <i class="lni-pencil"></i> years 2016-2017
+                            </div>
+                        </div>
+                        <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                            <div class="card-body">
+                                <ul>
+                                    <li> By May of 2016, had enough resources to move out from Georgia and started
+                                        learning Integrated engineering in Tallinn University of technology
+                                    </li>
+                                    <li> together with studies, continued learning and participating in different
+                                        hackathons.
+                                    </li>
+                                    <li>participated in garage48 startup camp in Tartu</li>
+                                    <li>participated in Erasmus+ program in vilnius</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="header-title" data-toggle="collapse" data-target="#questionThree"
+                                 aria-expanded="false" aria-controls="questionThree">
+                                <i class="lni-pencil"></i> years 2017-2018
+                            </div>
+                        </div>
+                        <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                            <div class="card-body">
+                                <li> by the end of june 2017, Went to digital marketing summer academy.</li>
+                                <li>Earned AdWords fundamentals, AdWords search, display and analytics certificates</li>
+                                <li> After successfull learning and internship period, started working in Eppc as an
+                                    junior account manager
+                                </li>
+                                <li> During this time, continued auditing different courses on edx and on Datacamp</li>
+                                <li> In January 2018, decided to change major to a relatively more interesting and IT
+                                    related topic, and applyed and got enrolled in TTU cyber security engineering
+                                    faculty
+                                </li>
+                                <li> By june, finished cyber security engineering courses on python, introduction to cyber security, web development, etc.
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <h3 class="text-center"> My Skillset</h3>
+
+    <div class="row">
+        <div class="col-md-12 col-centered cat-jar">
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Html</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">css</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Javascript</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Python</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">PHP</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Mysql</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Google AdWords</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Google Analytics
+            </button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Google Tag Manager
+            </button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Google scripts</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Python Google Adwords
+                API
+            </button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">phonegap</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Jquery</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">c++</button>
+            <button data-cat-id="189" class="p-1 btn btn-sm btn-default " data-toggle="tooltip">Java</button>
+
+        </div>
+    </div>
+    <h3 class="text-center pb-5 text-warning"> Why would you want to hire me?</h3>
+    <ul>
+        <h4 class="text-dark "><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i>I have experience of working with many different types of marketing campaigns on different platforms, including Google, Facebook and Bing</li> </h4>
+        <h4 class="text-dark "><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i>I'm result oriented person, and always ready to use my free time to develop and learn more </li> </h4>
+        <h4 class="text-dark "><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i>I have experience with sql </li> </h4>
+        <h4 class="text-dark "><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i>I can think out of the box, can come up with interesting ideas</li> </h4>
+        <h4 class="text-dark "><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i>I can adapt to any kind of environment pretty fast</li> </h4>
+        <h4 class="text-dark "><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i>Working on interesting projects is my hobby, I've been building different projects on different programming languages and different fields for more then 4 years</li> </h4>
+        <h4 class="text-dark "><i class="fa fa-check-square-o text-warning" aria-hidden="true"></i>I have experience with different uses of python, including numpy and panda libraries</li> </h4>
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+    </ul>
+</div>
+</body>
+
+
+</html>

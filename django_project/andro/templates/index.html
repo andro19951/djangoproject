@@ -1,0 +1,119 @@
+{% extends "header.html" %}
+{% load staticfiles %}
+{% block content %}
+<div>
+<div class="container wrapper">
+       <div class="col-md-11 col-centered">
+            <img src="{% static "assets/img/troll.png" %}" class="img-fluid d-block mx-auto w-25" alt="">
+        </div>
+
+        <!--Section heading-->
+        <h3 class="text-center upperKa pb-5"> უფრთხილდით ტროლებს!!</h3>
+        <!--Section description-->
+        <div class="col-md-6 col-centered">
+            <p class="text-center upperKa pb-3">ზოგადად მივიჩნევთ, რომ ინტერნეტის ეთიკა მარტივი შესასწავლია და
+                "ბუნებრივად მოდის", ფიზიკის,
+                ბიოლოგიის ან სამოქალაქო განათლებისგან განსხვავებით. სინამდვილეში, ინტერნეტი არც თუ ისე უსაფრთხო და
+                დაცულია, და ტექნოლოგიურ წინსვლასთან ერთად
+                უფრო და უფრო რთული ხდება ჩვეულებრივი მომხმარებლისთვის თავდაცვა.</p>
+
+
+
+            <h3 class="text-center upperKa pb-5"> თუკი ფიქრობთ, რომ ინტერნეტში დასამალი არაფერი გაქვთ და ეს კურსი თქვენთვის
+                არაა, <a href="{% url 'whydo' %} "> დააჭირეთ აქ</a></h3>
+            <p class="text-center upperKa"> დაგვითმეთ სულ რაღაც 5 წუთი დღეში და ჩვენ გასწავლით, თუ როგორ დაიცვათ თავი
+                ინტერნეტ სივრცეში</p>
+        </div>
+        <div class="row py-3 pb-5">
+
+
+            <div class="col-md-6"></div>
+        </div>
+</div>
+        <!-- Grid row -->
+    <div class="container wrapper">
+        <div class="row py-2 text-center">
+            <!-- Grid column -->
+
+                <div class="card-deck">
+ <div class="col-md-4 card">
+                <div class=" card-body">
+                    <div class="mb-3">
+                        <img src={% static "assets/img/screenshot.png" %} class="thumbnail card-img-top mx-auto">
+                    </div>
+                    <h5 class="font-weight-bold">
+                        <strong>ავტორიზაცია და პაროლები</strong>
+                    </h5>
+                    <p class="">ბოტტროლმა შემთხვევით ინტერნეტში 1.5 მილიარდი ადამიანის იმეილი და პაროლი იპოვა. ხოდა
+                        გადაწყვიტა გვასწავლოს, თუ როგორ აღარ უნდა მოვხვდეთ ამ 1.5 მილიარდში</p>
+                    <br>
+                    <br>
+                    <ul class="list-unstyled">
+                        <a href="/task/1" class="btn btn-sm  blue waves-effect add-item-to-cart float-right"><i
+                                class="fa"></i> კურსის დაწყება</a>
+                    </ul>
+                </div>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-4 card ">
+                <div class=" card-body">
+                    <div class="mb-3">
+                        <img class="col-md-11" src={% static "assets/img/trollbey.png" %} class="thumbnail card-img-top
+                             mx-auto">
+                    </div>
+                    <h5 class="font-weight-bold">
+                        <strong>ბოტტროლი შოპინგობს</strong>
+                    </h5>
+                    <p class="">ბოტტროლი საყიდლებზე წავიდა. არაფერი ისეთი, უბრალოდ თქვენგან მოპარული საკრედიტო ბარათით
+                        იყიდის რაღაცეებს. თქვენ კი გასწავლით, როგორ არ გახდეთ სხვა ცუდი ტროლების მსხვერპლი</p>
+                    <br>
+                    <ul class="list-unstyled">
+                        <!-- <input type="button" data-id="" class="delete btn btn-sm btn-danger waves-effect upperKa" value="delete"> -->
+                        <a href="/task/2" class="btn btn-sm blue waves-effect add-item-to-cart float-right"><i
+                                class="fa"></i> კურსის დაწყება</a>
+                    </ul>
+                </div>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-4 card">
+                <div class=" card-body">
+                    <div class="mb-3">
+                        <img src="http://i0.kym-cdn.com/entries/icons/original/000/000/091/TrollFace.jpg"
+                             class="thumbnail card-img-top mx-auto">
+                    </div>
+                    <h5 class="font-weight-bold">
+                        <strong>როგორ მოვატყუოთ ხალხი</strong>
+                    </h5>
+                    <p class="">
+                       ამ კურსში მარტივადაა ახსნილი ის ქმედებები, რომლებსაც სხვადსხვა გვერდებისა და ჯგუფების ადმინისტრატორები,
+                        ასევე ინდივიდუალური პირები იყენებენ სოციალურ მედიაში თქვენს მოსატყუებლად.
+                        <br>
+
+                    <ul class="list-unstyled">
+                        <!-- <input type="button" data-id="" class="delete btn btn-sm btn-danger waves-effect upperKa" value="delete"> -->
+                        <a href="/task/5" class="btn btn-sm blue waves-effect add-item-to-cart float-right"><i
+                                class="fa"></i> კურსის დაწყება</a>
+                    </ul>
+                </div>
+            </div>
+                </div>
+        </div>
+        <!-- Grid row -->
+        <div class="row">
+
+        </div>
+</div>
+
+</div>
+    <!--Section: Team v.1-->
+    <!--
+    Section 2-->
+
+
+
+    <script type="text/javascript">
+
+
+    </script>
+
+{% endblock %}
